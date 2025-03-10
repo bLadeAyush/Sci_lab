@@ -1,4 +1,4 @@
-#Bisection
+# Bisection
 ```
 function root = bisection(f, a, b, tol, max_iter)
     if f(a) * f(b) >= 0 then
@@ -39,7 +39,7 @@ disp(root);
 
 
 
-#Regula falsi
+# Regula falsi
 ```
 function root = regula_falsi(f, a, b, tol, max_iter)
     if f(a) * f(b) >= 0 then
@@ -80,7 +80,7 @@ disp(root);
 ```
 
 
-#NewtonRaphson 
+# NewtonRaphson 
 ```
 function root = newton_raphson(f, df, x0, tol, max_iter)
     iter = 0;
@@ -113,7 +113,7 @@ disp("Root:");
 disp(root);
 ```
 
-#Gauss
+# Gauss
 ```
 function [A, b] = gaussian_elimination(A, b)
     [m, n] = size(A);  // Get the dimensions of the matrix A
@@ -176,7 +176,7 @@ disp("Transformed b:");
 disp(b_rref);
 ```
 
-#Gauss Seidel
+# Gauss Seidel
 ```
 function x = gauss_seidel(A, b, tol, max_iter)
     n = length(b);
@@ -240,7 +240,7 @@ disp("Solution:");
 disp(x);
 ```
 
-#Gauss Jacobi
+# Gauss Jacobi
 ```
 function x = gauss_jacobi(A, b, tol, max_iter)
     n = length(b);
